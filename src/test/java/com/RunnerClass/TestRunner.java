@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 		features="G:\\Selenium tools\\EWQIMSProductBDD\\src\\main\\java\\Featurefile\\ca-MasterFolderTags.feature",
 		glue="com.stepDefinition",
 		format={"pretty","html:test-output", "junit:junit_xml/cucumber.xml"},
-		tags={"@tags102"}, 
+		tags={"@smoke"}, 
 		monochrome=true,
 		strict = false,
 		dryRun = false

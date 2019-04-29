@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" tests="1">
+<testcase classname="Folder Tags" name="Delete a Tag" time="3.405752">
+<system-out><![CDATA[Given Click on checkbox which data should be deleted............................................passed
+When Delete the Tag.............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

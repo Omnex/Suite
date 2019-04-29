@@ -76,7 +76,8 @@ public class EntityTypeWindow extends Base {
 	
 	@FindBy(xpath="//td[contains(text(),'ADD')]//parent::td//preceding-sibling::td//input[@role='checkbox']")
 	WebElement DynamicTableCheckBox1;
-	
+
+	//Add Entity
 public void AddEntityOpt() throws InterruptedException{
 	
 	EntityAdd.click();
@@ -84,6 +85,7 @@ public void AddEntityOpt() throws InterruptedException{
 	
 }
 
+// Add Data in the Entity table
 public void AddData(String arg1) throws InterruptedException{
 	
 	EAddName.sendKeys(arg1);
@@ -104,6 +106,7 @@ public void AddData(String arg1) throws InterruptedException{
 	
 }
 
+//Find the Duplicate Data
 public void DuplicateData() throws InterruptedException{
 	
 	EntityAdd.click();
@@ -128,6 +131,7 @@ public void DuplicateData() throws InterruptedException{
 	
 }
 
+//Cancel button Functionality
 public void Cancel() throws InterruptedException{
 	EntityAdd.click();
 
@@ -141,6 +145,7 @@ public void Cancel(String arg1) throws InterruptedException{
 	Thread.sleep(4000);
 }
 
+//Edit Button Functionality
 public void EditBtnClick() throws InterruptedException{
 	
 	EditBtn.click();
@@ -148,6 +153,7 @@ public void EditBtnClick() throws InterruptedException{
 	
 }
 
+//Get Error message
 public void getErrormessage() throws InterruptedException{
 	
 	WebElement w = driver.findElement(By.xpath("//div[text()='Please Select the row(s)']"));
@@ -168,6 +174,7 @@ public void getErrormessage() throws InterruptedException{
 	
 }
 
+//Checkbox Functionality and Color Functionality
 public void ClickCheckBox() throws InterruptedException{
 	String color = RowBackground.getCssValue("background-color");
 	System.out.println("Background Color When Row not Clicked:"+color);
@@ -206,6 +213,7 @@ public void OverallCheckBoxTest() throws InterruptedException{
 	
 }
 
+//Edit the Existing Data
 public void EditData() throws InterruptedException{
 	
 	EditBtn.click();
@@ -228,6 +236,7 @@ public void EditData() throws InterruptedException{
 	
 }
 
+//Delete button Functionality
 public void Delete(){
 	
 	DeleteBtn.click();
@@ -252,6 +261,7 @@ WebElement w = driver.findElement(By.xpath("//div[text()='Please select records 
 	
 }
 
+// Delete the data
 public void DeleteData() throws InterruptedException{
 	
 	DynamicTableCheckBox1.click();
@@ -290,6 +300,7 @@ public void DeleteData() throws InterruptedException{
 	
 }
 
+//Search button Functionality
 public void SearchButton() throws InterruptedException{
 	
 	SearchBtn.click();

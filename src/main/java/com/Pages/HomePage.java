@@ -24,45 +24,59 @@ public class HomePage extends Base {
 		
 	}
 	
+	//---------Entity Icon ---------------------
 	@FindBy(xpath="//a[@title='Entity']")
 	WebElement Entity;
 	
+	//---------Modules Icon ---------------------
 	@FindBy(xpath="//a[@title='Modules']")
 	WebElement Modules;
 	
+	//---------Site Administrator Icon ---------------------
 	@FindBy(xpath="//a[@title='Site Administrator']")
 	WebElement SiteAdministrator;
 	
+	//---------Project Pillar Icon ---------------------
 	@FindBy(xpath="//a[@title='Project Pillar']")
 	WebElement ProjectPillar;
 	
+	//---------Process/Activities Icon ---------------------
 	@FindBy(xpath="//a[@title='Process / Activities']")
 	WebElement ProcessActivities;
 	
+	//---------Levels Icon ---------------------
 	@FindBy(xpath="//a[@title='Levels']")
 	WebElement Levels;
 	
+	//---------Master Folder Tags Icon ---------------------
 	@FindBy(xpath="//a[@title='Master Folder Tags']")
 	WebElement MasterFolderTags ;
 	
+	//---------Create Department Icon ---------------------
 	@FindBy(xpath="//a[@title='Create Department']")
 	WebElement CreateDepartment ;
 	
+	//---------Assign Department Icon ---------------------
 	@FindBy(xpath="//a[@title='Assign Department']")
 	WebElement AssignDepartment ;
 	
+	//---------Logout Image Icon ---------------------
 	@FindBy(className="round_img")
 	WebElement logoutImg;
 	
+	//---------Logout Dropdown ---------------------
 	@FindBy(id="logout")
 	WebElement logout;
 	
+	//It will Find all the Broken Links in the current page -----> Refer the code in com.Utilities/BrokenLinks
 	public void BrokenLinksVerify() throws MalformedURLException, IOException, InterruptedException{
 		
 		BrokenLinks.Broken();
 		
 		
 	}
+	
+	//Entity Icon Click Functionality
 	public EntityPage EntityTest() throws Exception{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", Entity, driver);
@@ -72,7 +86,8 @@ public class HomePage extends Base {
 		
 		return new EntityPage();
 	}
-
+	
+	//Modules Icon Click Functionality
 	public ModulesPage ModuleTest()throws Exception{
 		
 		Modules.click();
@@ -81,6 +96,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Site Admin Icon Click Functionality
 	public SiteAdminPage SiteAdminTest()throws Exception{
 		
 		SiteAdministrator.click();
@@ -89,6 +105,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Project Pillar Icon Click Functionality
 	public ProjectPillarPage ProjectPillarTest()throws Exception{
 		
 		ProjectPillar.click();
@@ -97,6 +114,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Process/Activities Icon Click Functionality
 	public ProcessPage ProcessTest()throws Exception{
 		
 		ProcessActivities.click();
@@ -105,6 +123,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Levels Icon Click Functionality
 	public LevelsPage LevelsTest() throws Exception{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", Levels, driver);
@@ -118,6 +137,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Master Folder Tags Icon Click Functionality
 	public FolderTagsPage FolderTagstest()throws Exception{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", MasterFolderTags, driver);
@@ -129,6 +149,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Create Department Icon Click Functionality
 	public CreateDepartmentPage CreateDepartmentTest()throws Exception{
 		
 		CreateDepartment.click();
@@ -137,6 +158,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Assign Department Icon Click Functionality
 	public AssignDepartmentPage AssignDepartmentTest()throws Exception{
 		
 		AssignDepartment.click();
@@ -145,6 +167,7 @@ public class HomePage extends Base {
 		
 	}
 	
+	//Logout Functionality
 	public LoginPage Logout() throws Exception{
 		Thread.sleep(4000);
 		

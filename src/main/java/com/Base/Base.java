@@ -15,7 +15,7 @@ public class Base {
 	public static Properties prop;
 	public static WebDriver driver;
 	
-	//Constructor--> To initialize the files from com.Properties  
+	//Constructor--> To initialize the data from Properties file
 	public Base() throws Exception{
 		
 		prop = new Properties();

@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.Base.Base;
 import com.Utilities.BrokenLinks;
 import com.Utilities.HighlightFailedElements;
+import com.Utilities.waitdriver;
 
 
 public class LoginPage extends Base {
@@ -39,11 +40,9 @@ public class LoginPage extends Base {
 		
 	}
 	
-	
+	//Check the Login with Multiple User
 	public HomePage Login(String arg1, String arg2) throws Exception{
-		
-		
-		
+
 		username.sendKeys(arg1);
 		password.sendKeys(arg2);
 		LoginButton.click();
@@ -66,8 +65,10 @@ public class LoginPage extends Base {
 		return new HomePage();
 		
 	}
-		
-public HomePage Login() throws Exception{
+	
+	
+	//Actual Login	
+	public HomePage Login() throws Exception{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", username, driver);
 		HighlightFailedElements.drawBorder(username, driver);

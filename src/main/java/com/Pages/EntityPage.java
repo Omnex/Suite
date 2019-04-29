@@ -19,6 +19,7 @@ public class EntityPage extends Base {
 		PageFactory.initElements(driver, this);
 	}
 	
+	//---------Entity Page Elements--------------
 	@FindBy(xpath="//input[@value='Entity Type']")
 	WebElement EntityTypeBtn;
 	
@@ -103,7 +104,9 @@ public class EntityPage extends Base {
 	@FindBy(id="ifrBusinessUnit")
 	WebElement UnitFrame;
 	
-public EntityTypeWindow EntityButton() throws Exception{
+	
+	//---------Entity Button Functionality--------------
+	public EntityTypeWindow EntityButton() throws Exception{
 		
 		driver.switchTo().frame(frames);
 		
@@ -150,7 +153,9 @@ public EntityTypeWindow EntityButton() throws Exception{
 		
 		return new EntityTypeWindow();
 	}
-
+	
+	
+	//---------Business Unit Button Functionality--------------
 public BusinessUnitWindow BusinessUnitTest() throws Exception{
 	
 	driver.switchTo().frame(frames);
@@ -200,6 +205,7 @@ public BusinessUnitWindow BusinessUnitTest() throws Exception{
 	
 }
 
+//---------Site Function Button Functionality--------------
 public SiteFunctionWin siteFunctionTest() throws Exception{
 	
 	driver.switchTo().frame(frames);
@@ -247,6 +253,7 @@ public SiteFunctionWin siteFunctionTest() throws Exception{
 	
 }
 
+//---------Right Click operation Functionality--------------
 public void RightClick() throws InterruptedException{
 	
 	driver.switchTo().frame(frames);

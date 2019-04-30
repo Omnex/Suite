@@ -187,6 +187,7 @@ public class FolderTagsPage extends Base {
 
 	}
 	
+	
 	public void EditData(String arg1) throws InterruptedException {
 		
 		TextEditable.clear();

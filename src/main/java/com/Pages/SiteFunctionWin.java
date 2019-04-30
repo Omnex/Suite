@@ -21,6 +21,7 @@ public class SiteFunctionWin extends Base{
 		
 	}
 	
+	//-------------Site Function Page Elements----------------
 	@FindBy(xpath="//input[@id='btn_Grid_Businessunit_iladd']")
 	WebElement SAdd;
 	
@@ -89,8 +90,9 @@ public class SiteFunctionWin extends Base{
 	
 	@FindBy(xpath="//td[contains(text(),'Trick')]//parent::td//preceding-sibling::td//input[@role='checkbox']")
 	WebElement DynamicTableCheckBox1;
-	
-public void AddSiteOpt() throws InterruptedException{
+
+	//Add a Site
+	public void AddSiteOpt() throws InterruptedException{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", SAdd, driver);
 		HighlightFailedElements.drawBorder(SAdd, driver);
@@ -102,6 +104,7 @@ public void AddSiteOpt() throws InterruptedException{
 		
 	}
 
+	//Add Data in Site Unit Text Field
 	public void AddData(String arg1) throws InterruptedException{
 		
 		Thread.sleep(6000);
@@ -130,6 +133,7 @@ public void AddSiteOpt() throws InterruptedException{
 		
 	}
 
+	//Add a Duplicate data and it should display Error
 	public void DuplicateData(String arg1) throws InterruptedException{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", SAdd, driver);
@@ -172,6 +176,7 @@ public void AddSiteOpt() throws InterruptedException{
 		
 	}
 
+	//Cancel Button Functionality
 	public void Cancel() throws InterruptedException{
 		HighlightFailedElements.changeColor("rgb(0,200,0)", SAdd, driver);
 		HighlightFailedElements.drawBorder(SAdd, driver);
@@ -199,7 +204,8 @@ public void AddSiteOpt() throws InterruptedException{
 		Thread.sleep(4000);
 	}
 	
-public void EditBtnClick() throws InterruptedException{
+	//Edit button Functionality
+	public void EditBtnClick() throws InterruptedException{
 		
 	HighlightFailedElements.changeColor("rgb(0,200,0)",EditBtn, driver);
 	HighlightFailedElements.drawBorder(EditBtn, driver);
@@ -235,6 +241,7 @@ public void EditBtnClick() throws InterruptedException{
 		
 	}
 
+	//Checkbox Functionality
 	public void ClickCheckBox() throws InterruptedException{
 		String color = RowBackground.getCssValue("background-color");
 		System.out.println("Background Color When Row not Clicked:"+color);
@@ -310,6 +317,7 @@ public void EditBtnClick() throws InterruptedException{
 		
 	}
 
+	//Delete button Functionality
 	public void Delete() throws InterruptedException{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", DeleteBtn, driver);
@@ -377,6 +385,7 @@ public void EditBtnClick() throws InterruptedException{
 			
 	}
 
+	//Search Button Functionality
 	public void SearchButton() throws InterruptedException{
 		
 		SearchBtn.click();

@@ -21,7 +21,7 @@ When Delete the Tag
 Scenario Outline: Edit the Tag
 Given Click on Checkbox
 When Click on Edit button in Master Folder Tags 
-When Edit the text "<Edit data>"  and save it
+When Edit the text "<Edit data>" and save it
 
 Examples:
 |Edit data|

@@ -1,10 +1,10 @@
-# Suite
+# EWQIMS - Suite
 
-**IDE** - Eclipse
+:o:**IDE** - Eclipse
 
-**Framework** - Behaviour Driven Development using JUnit
+:o:**Framework** - Behaviour Driven Development using JUnit
 
-**Build** - Maven
+:o:**Build** - Maven
 
 ### Jar files Included:
 1. **selenium-server-standalone-3.14.0**
@@ -17,5 +17,5 @@
 8. **gherkin-2.12.1**
 9. **mockito-all-2.0.2-beta**
 
-### Dependency Included:
-- Check the Script file [pom.xml]
+### Dependency Included in POM:
+- Check the Script file [pom.xml](pom.xml)

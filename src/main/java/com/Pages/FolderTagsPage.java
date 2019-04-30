@@ -57,6 +57,17 @@ public class FolderTagsPage extends Base {
 	
 	@FindBy(className = "btn btn-mini btn-danger")
 	WebElement DeleteBtn;
+	
+	//--------------------Edit------------------------------
+	
+	@FindBy(xpath="//td[contains(text(),'Tag C')]//parent::td//preceding-sibling::td//input[@role='checkbox']")
+	WebElement CheckboxEdit;
+	
+	@FindBy(id="btn_FldrTagsGrid_iledit")
+	WebElement EditBtn;
+	
+	@FindBy(className="editable")
+	WebElement TextEditable;
 
 	
 
@@ -155,11 +166,36 @@ public class FolderTagsPage extends Base {
 		DeleteBtn.click();
 		
 		
+	}
+	
+	//------------------------Edit Tag-----------------------------------------------------------------
+	
+	public void EditBtn() throws InterruptedException {
 		
+		driver.switchTo().frame(frames);
 		
+		EditBtn.click();
+		
+		Thread.sleep(3000);
 		
 	}
+	
+	public void CheckboxClick() {
+		
+		CheckboxEdit.click();
 
+	}
+	
+	public void EditData(String arg1) throws InterruptedException {
+		
+		TextEditable.clear();
+		TextEditable.sendKeys(arg1);
+		
+		save.click();
+		
+		Thread.sleep(5000);
+		
+	}
 
 
 

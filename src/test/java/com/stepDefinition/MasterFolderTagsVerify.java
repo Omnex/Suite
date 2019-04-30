@@ -72,11 +72,34 @@ public class MasterFolderTagsVerify extends Base {
 	public void Delete_the_Tag() throws Throwable {
 	    
 		
-		
+		tags.DeleteBtn();
 		
 		
 	}
 	
+	//-----------------------------Edit Tag-----------------------
+	
+	@Given("^Click on Checkbox$")
+	public void Click_on_Checkbox() throws Throwable {
+	  
+		tags.CheckboxClick();
+		
+	}
+
+	@When("^Click on Edit button in Master Folder Tags$")
+	public void Click_on_Edit_button_in_Master_Folder_Tags() throws Throwable {
+	    
+		tags.EditBtn();
+		
+	}
+
+	@When("^Edit the text \"([^\"]*)\"  and save it$")
+	public void Edit_the_text_and_save_it(String arg1) throws Throwable {
+	   
+		tags.EditData(arg1);
+		
+	}
+
 	
 	@After("@Tenth")
 	public void teardown(Scenario scenario) throws IOException {

@@ -1,22 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" tests="4">
-<testcase classname="Folder Tags" name="Add a Tag" time="20.979116">
-<system-out><![CDATA[Given Click on Add button in Folder tags..................................................passed
-When Send data in Folder Tag grid "Tag A" and save.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Folder Tags" name="Add a Tag" time="20.309134">
-<system-out><![CDATA[Given Click on Add button in Folder tags..................................................passed
-When Send data in Folder Tag grid "Tag B" and save.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Folder Tags" name="Add a Tag" time="20.195821">
-<system-out><![CDATA[Given Click on Add button in Folder tags..................................................passed
-When Send data in Folder Tag grid "Tag C" and save.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Folder Tags" name="Delete a Tag" time="3.330553">
-<system-out><![CDATA[Given Click on checkbox which data should be deleted............................................passed
-When Delete the Tag.............................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" tests="1">
+<testcase classname="Folder Tags" name="Edit the Tag" time="0">
+<skipped><![CDATA[Given Click on Checkbox...........................................................skipped
+When Click on Edit button in Master Folder Tags...............................................undefined
+When Edit the text "Tag B"  and save it...................................................undefined
+]]></skipped>
 </testcase>
 </testsuite>

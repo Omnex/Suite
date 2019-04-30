@@ -161,6 +161,7 @@ public class FolderTagsPage extends Base {
 
 	}
 	
+	
 	public void DeleteBtn() {
 		
 		DeleteBtn.click();

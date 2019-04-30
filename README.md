@@ -22,3 +22,5 @@
 ### Dependency Included in POM:
 - Check the Script file [pom.xml](pom.xml)
 
+### Structure
+![alt text](http://www.simpleimageresizer.com/_uploads/photos/ed923e1e/Page_Object_Model-page.png)

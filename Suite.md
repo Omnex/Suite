@@ -1,2 +1,5 @@
 # Suite
-**Framework**:: Behaviour Driven Development
+**IDE** :: Eclipse
+**Framework** :: Behaviour Driven Development
+**Build** :: Maven
+

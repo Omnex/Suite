@@ -85,7 +85,7 @@ public class LevelsPage extends Base {
 	@FindBy(xpath="//a[@title='Test level']")
 	WebElement Level2;
 	
-	
+	//Fetching Default Level number and Changing the number
 	public void LevelNumber(String arg1) throws InterruptedException{
 		Thread.sleep(5000);
 		driver.switchTo().frame(frames);
@@ -111,7 +111,7 @@ public class LevelsPage extends Base {
 		Thread.sleep(4000);
 	}
 	
-	
+	//Level Name Text field Functionality
 	public void LevelName(String arg1){
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", LevelName, driver);
@@ -123,6 +123,7 @@ public class LevelsPage extends Base {
 		
 	}
 	
+	//Prefix Text Field Functionality
 	public void Prefix(String arg1){
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", Prefix, driver);
@@ -135,6 +136,7 @@ public class LevelsPage extends Base {
 		
 	}
 	
+	//Document Review Functionality
 	public void DocumentReview(String arg1){
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", Review, driver);
@@ -156,6 +158,7 @@ public class LevelsPage extends Base {
 		
 	}
 	
+	//Site Modification Checkbox Functionality
 	public void SiteModification() throws InterruptedException{
 		
 		boolean sitemod = SiteModCheckbox.isEnabled();
@@ -175,6 +178,7 @@ public class LevelsPage extends Base {
 
 	}
 	
+	//Sub level Functionality
 	public void SubLevelCreation() throws InterruptedException{
 		
 		boolean sub = SubLevel.isSelected();
@@ -196,6 +200,7 @@ public class LevelsPage extends Base {
 		
 	}
 	
+	//Save Button Functionality
 	public void savethelevel() throws InterruptedException{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", Save, driver);

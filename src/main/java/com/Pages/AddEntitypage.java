@@ -128,6 +128,7 @@ public class AddEntitypage extends Base {
 	@FindBy(id="popup_ok")
 	WebElement PopUpOk;
 	
+	//Enter Entity Name
 	public void EntityName(String arg1) throws InterruptedException{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", EntityName, driver);
@@ -139,6 +140,7 @@ public class AddEntitypage extends Base {
 		
 	}
 	
+	//Enter Entity Short Name
 	public void EntityShortName(String arg1) throws InterruptedException{
 		
 		HighlightFailedElements.changeColor("rgb(0,200,0)", ShortName, driver);
@@ -149,6 +151,7 @@ public class AddEntitypage extends Base {
 		Thread.sleep(5000);
 	}
 	
+	//Select Entity Type from the Dropdown
 	public void EntityTypeDropdown() throws InterruptedException{
 		
 		Thread.sleep(5000);
@@ -167,6 +170,7 @@ public class AddEntitypage extends Base {
 		
 	}
 	
+	//Select Business unit from the Dropdown
 	public void BusinessUnitDropdown() throws InterruptedException{
 		
 		Thread.sleep(5000);
@@ -183,6 +187,7 @@ public class AddEntitypage extends Base {
 		Thread.sleep(5000);
 	}
 	
+	//Select Site Function Dropdown
 	public void SiteFunctionDropDown() throws InterruptedException{
 		
 		Thread.sleep(5000);

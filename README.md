@@ -23,4 +23,4 @@
 - Check the Script file [pom.xml](pom.xml)
 
 ### Structure
-![alt text](http://www.simpleimageresizer.com/_uploads/photos/ed923e1e/Page_Object_Model-1.png)
+![alt text](C:\Users\Omnex\Desktop\Page Object Model\Page Object Model-1.jpg)

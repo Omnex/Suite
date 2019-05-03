@@ -20,6 +20,6 @@
 9. **mockito-all-2.0.2-beta**
 
 ### Dependency Included in POM:
-- Check the Script file [pom.xml](pom.xml)
+- Check the Dependency file [pom.xml](pom.xml)
 
 

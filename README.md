@@ -23,4 +23,4 @@
 - Check the Script file [pom.xml](pom.xml)
 
 ### Structure
-![alt text](file:///C:/Users/Omnex/Desktop/Page%20Object%20Model/Page%20Object%20Model-1.jpg)
+![alt text](file://C:/Users/Omnex/Desktop/Page%20Object%20Model/Page%20Object%20Model-1.jpg)

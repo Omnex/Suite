@@ -22,4 +22,6 @@
 ### Dependency Included in POM:
 - Check the Dependency file [pom.xml](pom.xml)
 
+### Structure
 
+![alt text](http://www.simpleimageresizer.com/_uploads/photos/b1bf7698/Page_Object_Model-1.png)

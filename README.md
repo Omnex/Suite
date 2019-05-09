@@ -24,4 +24,4 @@
 
 ### Structure
 
-![alt text](http://www.simpleimageresizer.com/_uploads/photos/b1bf7698/Page_Object_Model-1.png)
+![alt text](C:\Users\Omnex\Desktop\Page Object Model\Page Object Model-1.jpg)

@@ -22,6 +22,4 @@
 ### Dependency Included in POM:
 - Check the Dependency file [pom.xml](pom.xml)
 
-### Structure
 
-![alt text](C:\Users\Omnex\Desktop\Page Object Model\Page Object Model-1.jpg)
